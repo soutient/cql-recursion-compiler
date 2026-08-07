@@ -1,0 +1,5 @@
+# stack.yaml
+resolver: lts-22.0
+packages:
+- .
+
