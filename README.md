@@ -19,18 +19,22 @@ As a result, **the theoretical "optimized intermediate AST" never exists in memo
 
 Generated SQL output demonstrating **automatic structural extraction** and composition without runtime intermediate nodes:
 ```sql
+### CQL Recursive Compiler (Fix + Hylo) ###
+Generated SQL query:
+===========================================================
 WITH RECURSIVE Subordinates AS (
   SELECT * FROM (SELECT * FROM employees) AS t WHERE id = 42
   UNION ALL
   SELECT * FROM (SELECT * FROM employees) AS left_t INNER JOIN (Subordinates) AS right_t ON employees.manager_id = Subordinates.id
 )
 SELECT name FROM (Subordinates) AS t
+===========================================================
 
 - Stability   :  experimental
 
 - Build and Run   :
 bash 
-stack update
+stack upgrade
 stack build
 stack run cql-compiler
 
