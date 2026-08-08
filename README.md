@@ -38,6 +38,12 @@ stack upgrade
 stack build
 stack run cql-compiler
 
+- cabal 'cash in hand':
+bash 
+cabal update 
+cabal build 
+cabal run cql-compiler
+
 Maintainer  :  retablies@hotmail.com
 
 
