@@ -38,7 +38,7 @@ stack upgrade
 stack build
 stack run cql-compiler
 
-- cabal 'cash in hand':
+- cabal 'cash':
 bash 
 cabal update 
 cabal build 
