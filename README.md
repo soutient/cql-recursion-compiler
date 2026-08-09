@@ -1,4 +1,4 @@
-# CQL-recursion-compiler 
+# CQL recursion compiler 
 
 This project models a foundational relational subset of Categorical Query Language (CQL). Tables are treated as objects, and foreign keys/join predicates act as morphisms (arrows). Query composition represents walking a path of morphisms across schema structures. The engine focuses on evaluating and eliminating identity morphisms (zero-length steps) before generating physical target strings. CQL (formerly AQL) was developed by Statebox in collaboration with Conexus AI Inc.
 
