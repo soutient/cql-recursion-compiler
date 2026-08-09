@@ -2,7 +2,7 @@ cabal-version:       2.4
 name:                cql-recursion-compiler
 version:             0.1.0.0
 synopsis:            Zero-allocation CQL to SQL compiler using recursion schemes.
-license:             BSD-3-Clause
+license:             BSD-2-Clause
 author:              Alexis Soutient
 maintainer:          retablies@hotmail.com
 category:            Database, Compiler
